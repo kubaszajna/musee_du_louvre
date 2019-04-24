@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header__menu">
+            <img src="assets/menu.svg"> Menu
+        </div>
+        <h1 class="header__logo">
+            <img src="./assets/logo.png">
+        </h1>
+
+        <!-- LABELS FOR PAGINATION -->
+        <a class="page-label page-label--white page-label--black-border" href="index.html">Main</a>
+        <a class="page-label page-label--white page-label--black-border" href="about.html">About</a>
+        <a class="page-label page-label--white page-label--black-border page-label--is-active" href="events.html">Events</a>
+        <a class="page-label page-label--white page-label--black-border" href="app.html">App</a>
+
+        <!-- PREV/NEXT PAGINATION -->
+        <a href="about.html" class="page-prev"><img src="assets/prev.png"> <span>Prev</span></a>
+        <a href="app.html" class="page-next"><span>Next</span> <img src="assets/next.png"></a>
+
+        <!-- VIEWS/PAGES -->
+        <article class="view view--events">
+            <div class="view__title-container">
+                <h2 class="view__title">Upcoming events</h2>
+            </div>
+            <div class="view__calendar-container">
+                <div class="view__calendar-container-inner">
+                    <div class="view__calendar-event">
+                        <div class="view__calendar-event-inner">
+                            <div class="view__calendar-event-category">Design</div>
+                            <div class="view__calendar-event-date">
+                                Feb<br>02
+                            </div>
+                            <div class="view__calendar-event-description">
+                                Paris Short Film Festival
+                            </div>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                        </div>
+                    </div>
+                    <div class="view__calendar-event">
+                        <div class="view__calendar-event-inner">
+                            <div class="view__calendar-event-category">Fashion</div>
+                            <div class="view__calendar-event-date">
+                                Feb<br>03
+                            </div>
+                            <div class="view__calendar-event-description">
+                                Celebrity & Artist Management
+                            </div>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                        </div>
+                    </div>
+                    <div class="view__calendar-event">
+                        <div class="view__calendar-event-inner">
+                            <div class="view__calendar-event-category">Film</div>
+                            <div class="view__calendar-event-date">
+                                Feb<br>14
+                            </div>
+                            <div class="view__calendar-event-description">
+                                Romantic Jazz Exhibition
+                            </div>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                        </div>
+                    </div>
+                    <div class="view__calendar-event">
+                        <div class="view__calendar-event-inner">
+                            <div class="view__calendar-event-category">Photography</div>
+                            <div class="view__calendar-event-date">
+                                Feb<br>21
+                            </div>
+                            <div class="view__calendar-event-description">
+                                Fashion Week Showcase 2019
+                            </div>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="view__calendar-button view__calendar-button--prev">
+                    <img src="assets/calendar-arrow.svg">
+                </button>
+                <button class="view__calendar-button">
+                    <img src="assets/calendar-arrow.svg">
+                </button>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
