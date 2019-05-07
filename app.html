@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- HEADER -->
+        <header class="header__main">
+            <div class="header__menu">
+                <img src="./img/menu.svg" alt="menu">
+                <a href="#menu">MENU</a>
+            </div>
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="Musée du Louvre">
+            </div>
+            <a href="index.html" class="header__prev"><img src="./img/prev.png" alt="next"> <span>PREV</span></a>
+            <a href="events.html" class="header__next"><span>NEXT</span> <img src="./img/next.png" alt="next"></a>
+        </header>
+        <section class="section__container">
+            <!-- LABELS FOR PAGINATION -->
+            <a class="page-label" href="index.html">Main</a>
+            <a class="page-label" href="about.html">About</a>
+            <a class="page-label" href="events.html">Events</a>
+            <a class="page-label page-label--is-active" href="app.html">App</a>
+
+            <!-- PREV/NEXT PAGINATION -->
+            <a href="events.html" class="page-prev"><img src="./img/prev.png"> <span>Prev</span></a>
+
+            <!-- VIEWS/PAGES -->
+            <article class="view view--page-app">
+                <div class="view__title-container">
+                    <h2 class="view__title">Mobile Application</h2>
+                </div>
+                <div class="view__image-container">
+                    <img src="./img/app.png" class="app">
+                </div>
+                <div class="box">
+                    <div class="box__inner">
+                        <h3>Be your own guide!</h3>
+                        <p>With the App “My Visit to the Louvre,” you can be your own guide!</p>
+
+                        <ul>
+                            <li>
+                                - <strong>60,000 square meters of museum space modeled in 3D</strong> to help you find
+                                your
+                                way around
+                            </li>
+                            <li>
+                                - <strong>find an artwork, collection, or amenity</strong> by following the itinerary
+                                suggested
+                            </li>
+                            <li>
+                                - <strong>all the practical info you need</strong>, plus details of cultural events
+                                (exhibitions, auditorium, workshops, etc.)
+                            </li>
+                            <li>
+                                - <strong>600 comprehensive descriptions</strong> of artworks and of significant parts
+                                of
+                                the Louvre palace
+                            </li>
+                            <li>
+                                - <strong>600 audio commentaries</strong> on the artworks and museum rooms, available
+                                through in-app purchasing
+                            </li>
+                        </ul>
+                        <img src="./img/appstore.png">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
