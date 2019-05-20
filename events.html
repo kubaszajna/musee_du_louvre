@@ -2,37 +2,35 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container">
-
-        <!-- HEADER -->
-        <div class="header__menu">
-            <img src="assets/menu.svg"> Menu
-        </div>
-        <h1 class="header__logo">
-            <img src="./assets/logo.png">
-        </h1>
-
-        <!-- LABELS FOR PAGINATION -->
-        <a class="page-label page-label--white page-label--black-border" href="index.html">Main</a>
-        <a class="page-label page-label--white page-label--black-border" href="about.html">About</a>
-        <a class="page-label page-label--white page-label--black-border page-label--is-active" href="events.html">Events</a>
-        <a class="page-label page-label--white page-label--black-border" href="app.html">App</a>
-
-        <!-- PREV/NEXT PAGINATION -->
-        <a href="about.html" class="page-prev"><img src="assets/prev.png"> <span>Prev</span></a>
-        <a href="app.html" class="page-next"><span>Next</span> <img src="assets/next.png"></a>
+    <main class="content">
+        <header class="header__main">
+            <div class="header__menu">
+                <img src="./img/menu.svg" alt="menu">
+                <a href="#menu">MENU</a>
+            </div>
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="Musée du Louvre">
+            </div>
+            <a href="about.html" class="header__prev"><img src="./img/prev.png" alt="next"> <span>PREV</span></a>
+            <a href="app.html" class="header__next"><span>NEXT</span> <img src="./img/next.png" alt="next"></a>
+        </header>
 
         <!-- VIEWS/PAGES -->
-        <article class="container view--events">
-            <div class="view__title-container">
-                <h2 class="view__title">Upcoming events</h2>
+        <article class="view view--events section__container">
+            <a class="page-label" href="index.html">Main</a>
+            <a class="page-label" href="about.html">About</a>
+            <a class="page-label page-label--is-active" href="events.html">Events</a>
+            <a class="page-label" href="app.html">App</a>
+
+            <div class="section__aside__label">
+                <h2 class="section__aside__label__about">Upcoming events</h2>
             </div>
             <div class="view__calendar-container">
                 <div class="view__calendar-container-inner">
@@ -45,7 +43,7 @@
                             <div class="view__calendar-event-description">
                                 Paris Short Film Festival
                             </div>
-                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="./img/next-white.png"></a>
                         </div>
                     </div>
                     <div class="view__calendar-event">
@@ -57,7 +55,7 @@
                             <div class="view__calendar-event-description">
                                 Celebrity & Artist Management
                             </div>
-                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="./img/next-white.png"></a>
                         </div>
                     </div>
                     <div class="view__calendar-event">
@@ -69,7 +67,7 @@
                             <div class="view__calendar-event-description">
                                 Romantic Jazz Exhibition
                             </div>
-                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="./img/next-white.png"></a>
                         </div>
                     </div>
                     <div class="view__calendar-event">
@@ -81,19 +79,21 @@
                             <div class="view__calendar-event-description">
                                 Fashion Week Showcase 2019
                             </div>
-                            <a class="view__calendar-event-more" href="#">Learn more <img src="assets/next-white.png"></a>
+                            <a class="view__calendar-event-more" href="#">Learn more <img src="./img/next-white.png"></a>
                         </div>
                     </div>
                 </div>
                 <button class="view__calendar-button view__calendar-button--prev">
-                    <img src="assets/calendar-arrow.svg">
+                    <img src="./img/calendar-arrow.svg">
                 </button>
                 <button class="view__calendar-button">
-                    <img src="assets/calendar-arrow.svg">
+                    <img src="./img/calendar-arrow.svg">
                 </button>
+
             </div>
+
         </article>
-    </div>
+        </div>
 </body>
 
 </html>

@@ -233,6 +233,70 @@ content {
   grid-row: 1;
 }
 
+
+.page-label--a {
+  z-index: 1000;
+  order: 1;
+  cursor: pointer;
+  grid-column: 5;
+  align-self: flex-end;
+  justify-content: flex-end;
+  margin: 0 0 3.125rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: calc(1 / 16 * 1rem);
+  width: fit-content;
+  transition: .3s ease all;
+  text-decoration: none;
+  color: #000000;
+  left: -100px;
+}
+
+@media (max-width: 768px) {
+  .page-label--a {
+    display: none;
+  }
+}
+
+.page-label--a:after {
+  width: 100%;
+  height: 4px;
+  background: radial-gradient(35.4% 100%, #FF7338 0%, #F54732 100%);
+  display: block;
+  margin: 12px 0 0 0;
+  content: '';
+  transition: .3s ease all;
+  opacity: 0;
+}
+
+.page-label--black-border:after {
+  background: #000000;
+}
+
+.page-label--a:hover:after,
+.page-label--a--is-active:after {
+  opacity: 1;
+}
+
+.page-label--a:nth-of-type(1) {
+  grid-column: 6;
+}
+
+.page-label--a:nth-of-type(2) {
+  grid-column: 7;
+}
+
+.page-label--a:nth-of-type(3) {
+  grid-column: 8;
+}
+
+.page-label--a:nth-of-type(4) {
+  grid-column: 9;
+}
+
+
+
 .section__container .view__buy-ticket {
   grid-column: 5 / span 3;
   grid-row: 1;
@@ -591,11 +655,150 @@ content {
   color: white;
 }
 
+.section__aside__label__about--app {
+  position: absolute;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  bottom: 30vh;
+  left: -80px;
+  color: black;
+}
+
+/* THIRD VIEW */
+
+.view--events {
+  background: url('./img/bg2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.view--events .view__calendar-container {
+  margin: auto 0 auto 50px;
+  grid-column: 2 / span 4;
+  grid-row: 1 / span 2;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .view--events .view__calendar-container {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 80px 0 0 2rem;
+  }
+}
+
+.view--events .view__calendar-container-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: flex-start;
+  min-width: 1024px;
+}
+
+.view--events .view__calendar-event {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 15.625rem;
+  margin-right: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .view--events .view__calendar-event {
+    margin-right: 2rem;
+  }
+}
+
+.view--events .view__calendar-event-inner {
+  border: 1px solid #FFFFFF;
+  padding: 1.5625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.view--events .view__calendar-event-category {
+  color: #000000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  line-height: 1.25rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.view--events .view__calendar-event-date {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 4rem;
+  text-align: left;
+  color: #000000;
+  margin: 0.75rem 0 0 0;
+}
+
+.view--events .view__calendar-event-description {
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  text-align: left;
+  margin: 0.9375rem 0 0 0;
+}
+
+.view--events .view__calendar-event-more {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1.0625rem 0 0 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  justify-self: flex-end;
+}
+
+.view--events .view__calendar-event-more img {
+  vertical-align: middle;
+  width: 32px;
+  margin: -3px 0 0 10px;
+}
+
+.view--events .view__calendar-button {
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .view--events .view__calendar-button {
+    display: none;
+  }
+}
+
+.view--events .view__calendar-button.view__calendar-button--prev {
+  right: 50px;
+  transform: rotate(180deg);
+}
+
+.view--events .view__calendar-button img {
+  height: 40px;
+  width: 40px;
+}
 
 /* App */
 
 .view--page-app {
-  grid-template-columns: 12.5rem calc(20% - 12.5rem) 20% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 12.5rem calc(20% - 12.5rem) 20% 10% 18% 8% 8% 8% 8%;
   grid-template-rows: 132px auto 8.25rem;
 }
 
@@ -613,7 +816,7 @@ content {
 
 .view--page-app .view__image-container {
   grid-column: 2 / span 3;
-  grid-row: 2 / span 2;
+  grid-row: 1 / span 2;
   height: 100%;
   width: 100%;
   overflow: hidden;
